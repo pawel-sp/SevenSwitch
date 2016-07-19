@@ -380,14 +380,14 @@ import QuartzCore
             self.onLabel.frame = CGRectMake(0, 0, frame.size.width - frame.size.height, frame.size.height)
             self.offLabel.frame = CGRectMake(frame.size.height, 0, frame.size.width - frame.size.height, frame.size.height)
             
-            // thumb
-            let normalKnobWidth = frame.size.height - 2
-            if self.on {
-                thumbView.frame = CGRectMake(frame.size.width - (normalKnobWidth + 1), 1, frame.size.height - 2, normalKnobWidth)
-            }
-            else {
-                thumbView.frame = CGRectMake(1, 1, normalKnobWidth, normalKnobWidth)
-            }
+//            // thumb
+//            let normalKnobWidth = frame.size.height - 2
+//            if self.on {
+//                thumbView.frame = CGRectMake(frame.size.width - (normalKnobWidth + 1), 1, frame.size.height - 2, normalKnobWidth)
+//            }
+//            else {
+//                thumbView.frame = CGRectMake(1, 1, normalKnobWidth, normalKnobWidth)
+//            }
             
             thumbView.layer.cornerRadius = self.isRounded ? (frame.size.height * 0.5) - 1 : 2
         }
